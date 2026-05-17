@@ -345,3 +345,9 @@ jobs:
           name: build-${{ matrix.name }}
           path: artifacts/
           if-no-files-found: error
+
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v3.1.0
+        with:
+          name: build-${{ matrix.name }}
+          path: artifacts/
