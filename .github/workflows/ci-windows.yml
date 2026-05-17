@@ -348,7 +348,7 @@ jobs:
           if-no-files-found: error
 
       - name: Download a Build Artifact
-        uses: actions/download-artifact@v3.1.0
+        uses: actions/download-artifact@v4
         with:
           name: build-${{ matrix.name }}
           path: artifacts/
